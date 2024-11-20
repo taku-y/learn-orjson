@@ -1,5 +1,5 @@
 # learn-orjson
-このリポジトリは[`orjson`](https://pypi.org/project/orjson/)を用いてJSONを介してRustで生成したオブジェクトをPythonで復元できるかどうかを検証するためのプログラムが含まれます。
+このリポジトリは[`orjson`](https://pypi.org/project/orjson/)を用いてJSONを介してRustで生成したオブジェクトをPythonで復元できるかどうかを検証するためのプログラムが含まれます。`dataclass`を扱うために[`dacite`](https://pypi.org/project/dacite/)も使用しています。
 
 ## 動作確認
 
@@ -35,6 +35,8 @@ In `data.json`:
 ### Deserialization
 ```bash
 uv sync
+source .venv/bin/activate
+python hello.py
 ```
 
 Output:
